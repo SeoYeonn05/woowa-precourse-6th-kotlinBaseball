@@ -1,5 +1,8 @@
 package baseball
 
+import baseball.view.BaseballGameView
+import baseball.view.GameRestartView
+
 fun main() {
-    TODO("프로그램 구현")
+    GameRestartView().restartGame { BaseballGameView().runGame() }
 }
